@@ -1,0 +1,87 @@
+/****************************
+ * reset css
+ ****************************/
+html, body, ul, li, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover{ text-decoration: none;}
+
+/****************************
+ * global style
+ ****************************/
+#container {
+    width: 500px;
+    height: 270px;
+    padding: 30px 0 0 30px;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+}
+
+#canvas {
+    border-radius: 20px;
+}
+
+.app-btn{
+    outline: none;
+    width: 74px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.app-btn:hover .btn-text {
+    color: #1573fb;
+}
+
+.app-btn:hover .btn-text-container {
+    border: 1px solid #b6d9ff;
+    background: #ecf7ff;
+}
+
+.app-btn:active .btn-border {
+    background: rgba(0,0,0,0.4)
+}
+
+.app-btn img {
+    height: 74px;
+    width: 74px;
+}
+
+.btn-icon-container {
+    display: inline-block;
+    height:74px;
+    width: 74px;
+    position: relative;
+}
+
+.btn-border {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    border-radius: 23%;
+    border: 1px solid rgba(0,0,0,0.11);
+}
+
+.btn-text-container {
+    text-align: center;
+    margin: 6px 0 20px;
+    height: 28px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.btn-text {
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+

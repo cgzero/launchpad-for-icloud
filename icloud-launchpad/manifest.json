@@ -1,0 +1,14 @@
+{
+  "name": "icloud launchpad",
+  "description": "launchpad of your iCloud Apps",
+  "version": "1.0",
+  "browser_action": {
+      "default_icon": "icon48.png",
+      "default_popup": "popup.html"
+  },
+  "icons": { 
+    "19": "icon19.png",
+    "48": "icon48.png"
+  },
+  "manifest_version": 2
+}
