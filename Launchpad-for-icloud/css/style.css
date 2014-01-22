@@ -7,6 +7,14 @@ html, body, ul, li, h1, h2, h3, h4, h5, h6, p{
 }
 
 a, a:hover{ text-decoration: none;}
+.clr:after {
+    content:" ";
+    display:block;
+    height:0;
+    clear:both;
+    visibility: hidden;
+}
+
 
 /****************************
  * global style
@@ -21,13 +29,16 @@ a, a:hover{ text-decoration: none;}
 
 #canvas {
     border-radius: 20px;
+    width: 74px;
+    height: 74px;
 }
 
 .app-btn{
     outline: none;
     width: 74px;
-    display: inline-block;
-    margin-right: 20px;
+    display: block;
+    float: left;
+    margin-right: 24px;
 }
 
 .app-btn:hover .btn-text {
