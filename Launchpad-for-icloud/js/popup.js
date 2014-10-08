@@ -1,11 +1,21 @@
-$(document).ready(function() {
+/**
+ * @file popup js file
+ * @author cgzero(cgzero@me.com)
+ * @date 2014-09-28
+ */
+(function () {
+    // 图片地址
+    var URL_IMG = 'img/calendar_icon.png';
 
+    /**
+     * 日历对象
+     */
     var Calender = {
-        canvas      : document.getElementById('canvas'),
-        ctx         : document.getElementById('canvas').getContext('2d'),
-        imgSrc      : 'images/calendar_icon.png',
+        canvas: document.getElementById('canvas'),
+        ctx: document.getElementById('canvas').getContext('2d'),
+        imgSrc: URL_IMG,
 
-        drawSunday  : function(img) {
+        drawSunday: function(img) {
             this.ctx.drawImage(
                 img,
                 230 * 2,
@@ -15,7 +25,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawMonday  : function(img) {
+
+        drawMonday: function(img) {
             this.ctx.drawImage(
                 img,
                 230 * 2,
@@ -25,7 +36,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawTuesday : function(img) {
+
+        drawTuesday: function(img) {
             this.ctx.drawImage(
                 img,
                 230 * 2,
@@ -35,7 +47,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawWednesday : function(img) {
+
+        drawWednesday: function(img) {
             this.ctx.drawImage(
                 img,
                 230 * 2,
@@ -45,7 +58,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawThursday : function(img) {
+
+        drawThursday: function(img) {
             this.ctx.drawImage(img,
                 230 * 2,
                 240 * 2,
@@ -54,7 +68,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawFriday : function(img) {
+
+        drawFriday: function(img) {
             this.ctx.drawImage(img,
                 230 * 2,
                 270 * 2,
@@ -63,7 +78,8 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawSaturday : function(img) {
+
+        drawSaturday: function(img) {
             this.ctx.drawImage(
                 img,
                 230 * 2,
@@ -73,10 +89,12 @@ $(document).ready(function() {
                 10,10,160,15
             );
         },
-        drawNum : function(img, sx, dx) {
+
+        drawNum: function(img, sx, dx) {
             this.ctx.drawImage(img,sx,0,52 * 2,80 * 2,dx,25,26,40);
         },
-        drawDate : function(img, nowDate) {
+
+        drawDate: function(img, nowDate) {
             if (nowDate < 10) {
                 switch(nowDate) {
                     case 1 : this.drawNum(img, 11 * 2, 25); break;
@@ -89,7 +107,8 @@ $(document).ready(function() {
                     case 8 : this.drawNum(img, 385 * 2, 25); break;
                     case 9 : this.drawNum(img, 440 * 2, 25); break;
                 }
-            } else {
+            }
+            else {
                 var dateArr = [];
                 dateArr.push((nowDate - nowDate%10)/10);
                 dateArr.push(nowDate%10);
@@ -110,7 +129,8 @@ $(document).ready(function() {
                 }
             }
         },
-        drawCalender : function(img) {
+
+        drawCalender: function(img) {
             this.ctx.drawImage(
                 img,
                 0,
@@ -133,7 +153,8 @@ $(document).ready(function() {
             };
             this.drawDate(img, nowDate);
         },
-        init : function() {
+        
+        init: function() {
             var self = this;            
             this.canvas.setAttribute('width', 74 * 2);
             this.canvas.setAttribute('height', 74 * 2);
@@ -147,8 +168,16 @@ $(document).ready(function() {
                 self.drawCalender(this);
             };
         }
-    }
-    Calender.init();
-});
+    };
 
+    /**
+     * 初始化
+     */
+    function init() {
+        // 初始化日历
+        Calender.init();
+    }
+
+    init();
+})();
 

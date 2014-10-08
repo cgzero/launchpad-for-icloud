@@ -1,7 +1,7 @@
 {
   "name": "Launchpad for icloud",
   "description": "launchpad of your iCloud Apps",
-  "version": "1.4",
+  "version": "1.5",
   "browser_action": {
       "default_icon": {
         "19": "icon19.png",
