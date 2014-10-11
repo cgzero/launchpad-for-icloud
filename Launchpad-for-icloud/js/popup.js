@@ -150,21 +150,20 @@
                 case 4 : this.drawThursday(img); break;
                 case 5 : this.drawFriday(img); break;
                 case 6 : this.drawSaturday(img); break;
-            };
+            }
             this.drawDate(img, nowDate);
         },
         
         init: function() {
-            var self = this;            
+            var self = this;
             this.canvas.setAttribute('width', 74 * 2);
             this.canvas.setAttribute('height', 74 * 2);
             this.ctx.scale(2, 2);
             
-            
             var calImg = new Image();
             calImg.src = this.imgSrc;
             calImg.onload = function() {
-                self.ctx.beginPath(); 
+                self.ctx.beginPath();
                 self.drawCalender(this);
             };
         }
