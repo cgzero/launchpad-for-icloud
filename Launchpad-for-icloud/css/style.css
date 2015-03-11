@@ -1,12 +1,18 @@
 /**
  * reset css
  */
-html, body, ul, li, h1, h2, h3, h4, h5, h6, p{
+html, body,
+ul, li,
+h1, h2, h3, h4, h5, h6,
+p {
     margin: 0;
     padding: 0;
 }
 
-a, a:hover{ text-decoration: none;}
+a, a:hover {
+    text-decoration: none;
+}
+
 .clr:after {
     content:" ";
     display:block;
@@ -15,16 +21,15 @@ a, a:hover{ text-decoration: none;}
     visibility: hidden;
 }
 
-
 /**
  * global style
  */
 #container {
     width: 600px;
-    /*height: 270px;*/
     padding: 30px 0 0 30px;
     margin: 5px;
     border: 1px solid #e6e6e6;
+    border-radius: 4px;
 }
 
 #canvas {
@@ -33,7 +38,7 @@ a, a:hover{ text-decoration: none;}
     height: 74px;
 }
 
-.app-btn{
+.app-btn {
     outline: none;
     width: 74px;
     display: block;
@@ -51,7 +56,7 @@ a, a:hover{ text-decoration: none;}
 }
 
 .app-btn:active .btn-border {
-    background: rgba(0,0,0,0.4)
+    background: rgba(0,0,0,0.4);
 }
 
 .app-btn img {
@@ -74,7 +79,7 @@ a, a:hover{ text-decoration: none;}
     top: 0;
     z-index: 10;
     border-radius: 23%;
-    border: 1px solid rgba(0,0,0,0.11);
+    border: 1px solid rgba(0, 0, 0, 0.11);
 }
 
 .btn-text-container {
@@ -83,7 +88,7 @@ a, a:hover{ text-decoration: none;}
     height: 28px;
     position: relative;
     border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(255, 255, 255, 0);
     -webkit-transition: border .1s ease, background-color .1s ease;
     transition: border .1s ease, background-color .1s ease;
 }
@@ -91,7 +96,7 @@ a, a:hover{ text-decoration: none;}
 .btn-text {
     color: rgb(51, 51, 51);
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Helvetica Neue",sans-serif;
     font-weight: 300;
     line-height: 1.8;
