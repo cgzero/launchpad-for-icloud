@@ -4,8 +4,35 @@
  * @date 2014-09-28
  */
 (function () {
-    // 图片地址
-    var URL_IMG = 'img/calendar_icon.png';
+    /**
+     * 图片地址
+     *
+     * @const
+     * @type {string}
+     */
+    var URL_IMG =  chrome.i18n.getMessage('calendarIconUrl');
+
+    /**
+     * 需要国际化的文字节点
+     *
+     * @const
+     * @type {Array}
+     */
+    var TEXT_NODES = [
+        'mail',
+        'contacts',
+        'calendar',
+        'photos',
+        'iclouddrive',
+        'find',
+        'notes',
+        'reminders',
+        'pages',
+        'numbers',
+        'keynote',
+        'settings',
+        'home'
+    ];
 
     /**
      * 日历对象
@@ -15,86 +42,43 @@
         ctx: document.getElementById('canvas').getContext('2d'),
         imgSrc: URL_IMG,
 
-        drawSunday: function(img) {
-            this.ctx.drawImage(
-                img,
-                230 * 2,
-                120 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawDay: function (img, sy) {
+            this.ctx.drawImage(img, 230 * 2, sy, 340 * 2, 30 * 2, 10, 10, 160, 15);
         },
 
-        drawMonday: function(img) {
-            this.ctx.drawImage(
-                img,
-                230 * 2,
-                150 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawSunday: function (img) {
+            this.drawDay(img, 120 * 2);
         },
 
-        drawTuesday: function(img) {
-            this.ctx.drawImage(
-                img,
-                230 * 2,
-                180 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawMonday: function (img) {
+            this.drawDay(img, 150 * 2);
         },
 
-        drawWednesday: function(img) {
-            this.ctx.drawImage(
-                img,
-                230 * 2,
-                210 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawTuesday: function (img) {
+            this.drawDay(img, 180 * 2);
         },
 
-        drawThursday: function(img) {
-            this.ctx.drawImage(img,
-                230 * 2,
-                240 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawWednesday: function (img) {
+            this.drawDay(img, 210 * 2);
         },
 
-        drawFriday: function(img) {
-            this.ctx.drawImage(img,
-                230 * 2,
-                270 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawThursday: function (img) {
+            this.drawDay(img, 240 * 2);
         },
 
-        drawSaturday: function(img) {
-            this.ctx.drawImage(
-                img,
-                230 * 2,
-                300 * 2,
-                340 * 2,
-                30 * 2,
-                10,10,160,15
-            );
+        drawFriday: function (img) {
+            this.drawDay(img, 270 * 2);
         },
 
-        drawNum: function(img, sx, dx) {
+        drawSaturday: function (img) {
+            this.drawDay(img, 300 * 2);
+        },
+
+        drawNum: function (img, sx, dx) {
             this.ctx.drawImage(img,sx,0,52 * 2,80 * 2,dx,25,26,40);
         },
 
-        drawDate: function(img, nowDate) {
+        drawDate: function (img, nowDate) {
             if (nowDate < 10) {
                 switch(nowDate) {
                     case 1 : this.drawNum(img, 11 * 2, 25); break;
@@ -130,7 +114,7 @@
             }
         },
 
-        drawCalender: function(img) {
+        drawCalender: function (img) {
             this.ctx.drawImage(
                 img,
                 0,
@@ -153,13 +137,13 @@
             }
             this.drawDate(img, nowDate);
         },
-        
+
         init: function() {
             var self = this;
             this.canvas.setAttribute('width', 74 * 2);
             this.canvas.setAttribute('height', 74 * 2);
             this.ctx.scale(2, 2);
-            
+
             var calImg = new Image();
             calImg.src = this.imgSrc;
             calImg.onload = function() {
@@ -169,14 +153,19 @@
         }
     };
 
+    function setTextNodes() {
+        $.each(TEXT_NODES, function (i, item) {
+            $('#i18n-' + item).text(chrome.i18n.getMessage(item));
+        });
+    }
+
     /**
      * 初始化
      */
-    function init() {
+    (function init() {
         // 初始化日历
         Calender.init();
-    }
-
-    init();
+        setTextNodes();
+    })();
 })();
 

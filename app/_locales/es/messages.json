@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "Contactos"
+    },
+    "calendar": {
+        "message": "Calendario"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_es.png"
+    },
+    "photos": {
+        "message": "Fotos"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "Buscar"
+    },
+    "notes": {
+        "message": "Notas"
+    },
+    "reminders": {
+        "message": "Recordatorios"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "Ajustes"
+    },
+    "home": {
+        "message": "Inicio"
+    }
+}

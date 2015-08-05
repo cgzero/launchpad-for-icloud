@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "연락처"
+    },
+    "calendar": {
+        "message": "캘린더"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_ko.png"
+    },
+    "photos": {
+        "message": "사진"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "나의 iPhone 찾기"
+    },
+    "notes": {
+        "message": "메모"
+    },
+    "reminders": {
+        "message": "미리 알림"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "설정"
+    },
+    "home": {
+        "message": "홈"
+    }
+}

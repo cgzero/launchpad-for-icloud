@@ -1,18 +1,19 @@
 {
   "name": "Launchpad for icloud",
   "description": "launchpad of your iCloud Apps",
-  "version": "1.6.1",
+  "version": "2.0.1",
   "browser_action": {
       "default_icon": {
-        "19": "icon19.png",
-        "38": "icon38.png"
+        "19": "src/img/icon19.png",
+        "38": "src/img/icon38.png"
       },
       "default_popup": "popup.html"
   },
   "icons": {
-    "19": "icon19.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "19": "src/img/icon19.png",
+    "48": "src/img/icon48.png",
+    "128": "src/img/icon128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "default_locale": "en"
 }

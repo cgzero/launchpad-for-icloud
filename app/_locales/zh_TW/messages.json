@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "郵件"
+    },
+    "contacts": {
+        "message": "聯絡資訊"
+    },
+    "calendar": {
+        "message": "行事曆"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_zh_tw.png"
+    },
+    "photos": {
+        "message": "照片"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "尋找我的 iPhone"
+    },
+    "notes": {
+        "message": "備忘錄"
+    },
+    "reminders": {
+        "message": "提醒事項"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "home": {
+        "message": "首頁"
+    }
+}

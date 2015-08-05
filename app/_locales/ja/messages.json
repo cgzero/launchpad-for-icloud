@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "メール"
+    },
+    "contacts": {
+        "message": "連絡先"
+    },
+    "calendar": {
+        "message": "カレンダー"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_ja.png"
+    },
+    "photos": {
+        "message": "写真"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "iPhoneを探す"
+    },
+    "notes": {
+        "message": "メモ"
+    },
+    "reminders": {
+        "message": "リマインダー"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "home": {
+        "message": "ホーム"
+    }
+}

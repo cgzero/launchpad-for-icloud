@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "Contacten"
+    },
+    "calendar": {
+        "message": "Agenda"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_nl.png"
+    },
+    "photos": {
+        "message": "Foto's"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "Zoek mijn iPhone"
+    },
+    "notes": {
+        "message": "Notities"
+    },
+    "reminders": {
+        "message": "Herinneringen"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "Instellingen"
+    },
+    "home": {
+        "message": "Thuis"
+    }
+}

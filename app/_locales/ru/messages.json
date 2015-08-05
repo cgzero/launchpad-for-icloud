@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "Контакты"
+    },
+    "calendar": {
+        "message": "Календарь"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_ru.png"
+    },
+    "photos": {
+        "message": "Фото"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "Найти iPhone"
+    },
+    "notes": {
+        "message": "Заметки"
+    },
+    "reminders": {
+        "message": "Напоминания"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "Настройки"
+    },
+    "home": {
+        "message": "Домой"
+    }
+}

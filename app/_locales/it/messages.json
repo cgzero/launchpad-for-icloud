@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "Contatti"
+    },
+    "calendar": {
+        "message": "Calendario"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_it.png"
+    },
+    "photos": {
+        "message": "Foto"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "Trova il mio iPhone"
+    },
+    "notes": {
+        "message": "Note"
+    },
+    "reminders": {
+        "message": "Promemoria"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "Impostazioni"
+    },
+    "home": {
+        "message": "Home"
+    }
+}

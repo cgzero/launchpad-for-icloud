@@ -1,0 +1,44 @@
+{
+    "mail": {
+        "message": "Mail"
+    },
+    "contacts": {
+        "message": "Contacts"
+    },
+    "calendar": {
+        "message": "Calendrier"
+    },
+    "calendarIconUrl": {
+        "message": "src/img/calendar_icon_fr.png"
+    },
+    "photos": {
+        "message": "Photos"
+    },
+    "iclouddrive": {
+        "message": "iCloud Drive"
+    },
+    "find": {
+        "message": "Localiser"
+    },
+    "notes": {
+        "message": "Notes"
+    },
+    "reminders": {
+        "message": "Rappels"
+    },
+    "pages": {
+        "message": "Pages"
+    },
+    "numbers": {
+        "message": "Numbers"
+    },
+    "keynote": {
+        "message": "Keynote"
+    },
+    "settings": {
+        "message": "Réglages"
+    },
+    "home": {
+        "message": "Accueil"
+    }
+}
