@@ -1,7 +1,10 @@
-Launchpad for iCloud
-================
+# Launchpad for iCloud
 
-更新历史
+## 简介
+
+适用于Chrome浏览器，快速登录iCloud应用的Launchpad
+
+## 更新历史
 
 - 2.0.1 修改样式小问题
 - 2.0 国际化，支持11种语言：英、法、德、意、俄、荷、西、日、韩、简中、繁中 [2015-08-05]
