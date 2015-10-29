@@ -31,7 +31,8 @@
         'numbers',
         'keynote',
         'settings',
-        'home'
+        'home',
+        'fmf'
     ];
 
     /**

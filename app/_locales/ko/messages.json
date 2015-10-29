@@ -40,5 +40,8 @@
     },
     "home": {
         "message": "홈"
+    },
+    "fmf": {
+        "message": "친구 찾기"
     }
 }

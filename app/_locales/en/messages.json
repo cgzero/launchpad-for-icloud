@@ -40,5 +40,8 @@
     },
     "home": {
         "message": "Home"
+    },
+    "fmf": {
+        "message": "Find Friends"
     }
 }

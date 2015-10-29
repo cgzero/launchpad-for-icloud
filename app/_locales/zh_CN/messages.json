@@ -40,5 +40,8 @@
     },
     "home": {
         "message": "首页"
+    },
+    "fmf": {
+        "message": "查找朋友"
     }
 }

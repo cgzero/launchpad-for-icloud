@@ -40,5 +40,8 @@
     },
     "home": {
         "message": "Thuis"
+    },
+    "fmf": {
+        "message": "Zoek vrienden"
     }
 }
