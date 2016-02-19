@@ -1,6 +1,6 @@
 /**
  * @file popup js file
- * @author cgzero(cgzero@me.com)
+ * @author cgzero(cgzero@cgzero.com)
  * @date 2014-09-28
  */
 (function () {
