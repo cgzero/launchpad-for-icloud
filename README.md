@@ -4,6 +4,8 @@
 
 适用于 Chrome 浏览器，快速登录 iCloud 应用的 Launchpad
 
+下载地址：[点此下载](https://chrome.google.com/webstore/detail/dfngkocjobhcdlknaffekkiafkboehkn)
+
 ## 更新历史
 
 - 2.1 增加 Find Friends 应用，去除了 beta 角标 [2015-10-30]
