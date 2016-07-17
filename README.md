@@ -1,5 +1,7 @@
 # Launchpad for iCloud
 
+![](https://raw.githubusercontent.com/cgzero/launchpad-for-icloud/master/tmp/screen-shot1.png)
+
 ## 简介
 
 适用于 Chrome 浏览器，快速登录 iCloud 应用的 Launchpad
