@@ -1,12 +1,8 @@
 # Launchpad for iCloud
 
+适用于 Chrome 浏览器，快速登录 iCloud 应用的 Launchpad。[点此下载](https://chrome.google.com/webstore/detail/dfngkocjobhcdlknaffekkiafkboehkn)
+
 ![](https://raw.githubusercontent.com/cgzero/launchpad-for-icloud/master/tmp/screen-shot1.png)
-
-## 简介
-
-适用于 Chrome 浏览器，快速登录 iCloud 应用的 Launchpad
-
-下载地址：[点此下载](https://chrome.google.com/webstore/detail/dfngkocjobhcdlknaffekkiafkboehkn)
 
 ## 更新历史
 
