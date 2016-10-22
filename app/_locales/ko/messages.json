@@ -43,5 +43,8 @@
     },
     "fmf": {
         "message": "친구 찾기"
+    },
+    "launchpad": {
+        "message": "Launchpad"
     }
 }

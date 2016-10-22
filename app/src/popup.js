@@ -32,7 +32,8 @@
         'keynote',
         'settings',
         'home',
-        'fmf'
+        'fmf',
+        'launchpad'
     ];
 
     /**

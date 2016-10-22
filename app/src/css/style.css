@@ -95,12 +95,12 @@ a, a:hover {
     border-radius: 20px;
     padding: 0 10px;
     position: relative;
-    font: 300 13px "Helvetica Neue", sans-serif;
+    font: 400 13px "Helvetica Neue", sans-serif;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
     transition: border .1s ease, background-color .1s ease;
     white-space: nowrap;
-    color: rgb(51, 51, 51);
+    color: #444;
     cursor: pointer;
 }
 

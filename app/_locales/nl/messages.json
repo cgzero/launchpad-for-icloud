@@ -43,5 +43,8 @@
     },
     "fmf": {
         "message": "Zoek vrienden"
+    },
+    "launchpad": {
+        "message": "Launchpad"
     }
 }

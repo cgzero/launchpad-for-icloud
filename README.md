@@ -2,10 +2,11 @@
 
 适用于 Chrome 浏览器，快速登录 iCloud 应用的启动器。[点此下载](https://chrome.google.com/webstore/detail/dfngkocjobhcdlknaffekkiafkboehkn)
 
-![](https://raw.githubusercontent.com/cgzero/launchpad-for-icloud/master/tmp/screen-shot1.png)
+![](tmp/screen-shot1.png)
 
 ## 更新历史
 
+- 2.4 优化了图标颜色，适应 Chrome 51 的设计风格 [2016-10-22]
 - 2.3 更新了 Find Friends 图标 [2016-09-23]
 - 2.2 更新了 notes 的链接 [2016-02-19]
 - 2.1 增加 Find Friends 应用，去除了 beta 角标 [2015-10-30]
