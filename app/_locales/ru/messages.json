@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "Найти iPhone"
+        "message": "Найти"
     },
     "notes": {
         "message": "Заметки"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "Домой"
-    },
-    "fmf": {
-        "message": "Мои друзья"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

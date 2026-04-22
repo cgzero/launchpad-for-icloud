@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "iPhoneを探す"
+        "message": "探す"
     },
     "notes": {
         "message": "メモ"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "ホーム"
-    },
-    "fmf": {
-        "message": "友達を探す"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

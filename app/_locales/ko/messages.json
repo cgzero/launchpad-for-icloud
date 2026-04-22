@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "나의 iPhone 찾기"
+        "message": "찾기"
     },
     "notes": {
         "message": "메모"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "홈"
-    },
-    "fmf": {
-        "message": "친구 찾기"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

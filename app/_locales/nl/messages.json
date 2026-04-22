@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "Zoek mijn iPhone"
+        "message": "Zoek"
     },
     "notes": {
         "message": "Notities"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "Thuis"
-    },
-    "fmf": {
-        "message": "Zoek vrienden"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

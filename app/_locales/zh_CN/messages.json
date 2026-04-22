@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "查找我的 iPhone"
+        "message": "查找"
     },
     "notes": {
         "message": "备忘录"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "首页"
-    },
-    "fmf": {
-        "message": "查找朋友"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

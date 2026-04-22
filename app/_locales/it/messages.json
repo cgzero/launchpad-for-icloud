@@ -18,7 +18,7 @@
         "message": "iCloud Drive"
     },
     "find": {
-        "message": "Trova il mio iPhone"
+        "message": "Dov'è"
     },
     "notes": {
         "message": "Note"
@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "Home"
-    },
-    "fmf": {
-        "message": "Trova Amici"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

@@ -40,11 +40,5 @@
     },
     "home": {
         "message": "Inicio"
-    },
-    "fmf": {
-        "message": "Amigos"
-    },
-    "launchpad": {
-        "message": "Launchpad"
     }
 }

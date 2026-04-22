@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <title>Launchpad for iCloud</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <script type="text/javascript" src="dep/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="dep/jquery-4.0.0.min.js"></script>
 </head>
 <body>
     <div id="container" class="clr">
-        <a target="_blank" href="https://www.icloud.com/#mail" class="app-btn">
+        <a target="_blank" href="#" data-app="mail" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/mail_icon.png" alt="Mail">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-mail"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#contacts" class="app-btn">
+        <a target="_blank" href="#" data-app="contacts" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/contacts_icon.png" alt="Contacts">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-contacts"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#calendar" class="app-btn">
+        <a target="_blank" href="#" data-app="calendar" class="app-btn">
             <div class="btn-icon-container">
                 <div class="btn-border"></div>
                 <canvas id="canvas"></canvas>
@@ -35,106 +35,88 @@
                 <span class="btn-text" id="i18n-calendar"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#photos" class="app-btn">
+        <a target="_blank" href="#" data-app="photos" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/photos_icon.png" alt="Photos">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-photos"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#iclouddrive" class="app-btn">
+        <a target="_blank" href="#" data-app="iclouddrive" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/iclouddrive_icon.png" alt="iCloud Drive">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-iclouddrive"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#notes2" class="app-btn">
+        <a target="_blank" href="#" data-app="notes" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/notes_icon.png" alt="Notes">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-notes"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#reminders" class="app-btn">
+        <a target="_blank" href="#" data-app="reminders" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/reminders_icon.png" alt="Reminders">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-reminders"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#pages" class="app-btn">
+        <a target="_blank" href="#" data-app="pages" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/pages_icon.png" alt="Pages">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-pages"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#numbers" class="app-btn">
+        <a target="_blank" href="#" data-app="numbers" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/numbers_icon.png" alt="Numbers">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-numbers"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#keynote" class="app-btn">
+        <a target="_blank" href="#" data-app="keynote" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/keynote_icon.png" alt="Keynote">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-keynote"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#fmf" class="app-btn">
+        <a target="_blank" href="#" data-app="find" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
-                <img src="src/img/fmf_icon.png" alt="Find My iPhone">
-            </div>
-            <div class="btn-text-container">
-                <span class="btn-text" id="i18n-fmf"></span>
-            </div>
-        </a>
-        <a target="_blank" href="https://www.icloud.com/#find" class="app-btn">
-            <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/find_icon.png" alt="Find My iPhone">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-find"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com/#settings" class="app-btn">
+        <a target="_blank" href="#" data-app="settings" class="app-btn">
             <div class="btn-icon-container">
-                <div class="btn-border"></div>
+                <!-- <div class="btn-border"></div> -->
                 <img src="src/img/settings_icon.png" alt="Settings">
             </div>
             <div class="btn-text-container">
                 <span class="btn-text" id="i18n-settings"></span>
             </div>
         </a>
-        <a target="_blank" href="https://www.icloud.com" class="app-btn">
-            <div class="btn-icon-container">
-                <div class="btn-border"></div>
-                <img src="src/img/launchpad_icon.png" alt="Launchpad">
-            </div>
-            <div class="btn-text-container">
-                <span class="btn-text" id="i18n-launchpad"></span>
-            </div>
-        </a>
     </div>
-    <script type="text/javascript" src="src/popup.js"></script>
+    <script type="module" src="src/popup.js"></script>
 </body>
 </html>

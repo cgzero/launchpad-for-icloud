@@ -9,6 +9,15 @@ p {
     padding: 0;
 }
 
+body {
+    font-family: system-ui, Helvetica Neue, sans-serif;
+}
+
+:root {
+    --app-size: 70px;
+    --app-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+}
+
 a, a:hover {
     text-decoration: none;
 }
@@ -25,48 +34,52 @@ a, a:hover {
  * global style
  */
 #container {
-    width: 695px;
-    padding: 30px 0 0 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    width: 540px;
+    padding: 24px 24px 8px 24px;
     margin: 5px;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
+    border: 1px solid #ececec;
+    border-radius: 16px;
 }
 
 #canvas {
-    border-radius: 20px;
-    width: 74px;
-    height: 74px;
+    border-radius: 22%;
+    width: var(--app-size);
+    height: var(--app-size);
+    box-shadow: var(--app-shadow);
 }
 
 .app-btn {
     outline: none;
-    width: 74px;
-    display: block;
-    float: left;
-    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s cubic-bezier(.32, .08, .24, 1);
 }
 
-.app-btn:hover .btn-text {
-    color: #1573fb;
-    border: 1px solid #b6d9ff;
-    background: #ecf7ff;
-    box-shadow: 0 0 5px 5px #fff;
-    z-index: 10;
+.app-btn:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
-.app-btn:active .btn-border {
-    background: rgba(0, 0, 0, 0.4);
+.app-btn:active {
+    opacity: .5;
 }
 
 .app-btn img {
-    height: 74px;
-    width: 74px;
+    height: var(--app-size);
+    width: var(--app-size);
+    border-radius: 22%;
+    box-shadow: var(--app-shadow);
+
 }
 
 .btn-icon-container {
     display: inline-block;
-    height:74px;
-    width: 74px;
+    height:var(--app-size);
+    width: var(--app-size);
     position: relative;
 }
 
@@ -77,13 +90,13 @@ a, a:hover {
     bottom: 0;
     top: 0;
     z-index: 10;
-    border-radius: 23%;
-    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 22%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .btn-text-container {
     text-align: center;
-    margin: 3px 0 15px;
+    margin: 3px 0 0;
     height: 28px;
     display: flex;
     justify-content: center;
@@ -95,12 +108,10 @@ a, a:hover {
     border-radius: 20px;
     padding: 0 10px;
     position: relative;
-    font: 400 13px "Helvetica Neue", sans-serif;
+    font-size: 13px;
     line-height: 1.8;
-    -webkit-font-smoothing: antialiased;
-    transition: border .1s ease, background-color .1s ease;
     white-space: nowrap;
-    color: #444;
+    color: rgba(0, 0, 0, .88);
     cursor: pointer;
 }
 
