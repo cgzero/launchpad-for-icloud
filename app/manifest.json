@@ -1,7 +1,7 @@
 {
   "name": "Launchpad for iCloud",
   "description": "Launchpad of your iCloud Apps",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "action": {
       "default_icon": "src/img/icon.png",
       "default_popup": "popup.html"
