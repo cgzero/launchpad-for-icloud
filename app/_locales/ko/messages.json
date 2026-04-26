@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "Mail"
+        "message": "Mail",
+        "url": "https://www.icloud.com/ko-kr/mail"
     },
     "contacts": {
-        "message": "연락처"
+        "message": "연락처",
+        "url": "https://www.icloud.com/ko-kr/contacts"
     },
     "calendar": {
-        "message": "캘린더"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_ko.png"
+        "message": "캘린더",
+        "url": "https://www.icloud.com/ko-kr/calendar"
     },
     "photos": {
-        "message": "사진"
+        "message": "사진",
+        "url": "https://www.icloud.com/ko-kr/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "Drive",
+        "url": "https://www.icloud.com/ko-kr/iclouddrive"
     },
     "find": {
-        "message": "찾기"
+        "message": "찾기",
+        "url": "https://www.icloud.com/ko-kr/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/ko-kr/invites"
     },
     "notes": {
-        "message": "메모"
+        "message": "메모",
+        "url": "https://www.icloud.com/ko-kr/notes"
     },
     "reminders": {
-        "message": "미리 알림"
+        "message": "미리 알림",
+        "url": "https://www.icloud.com/ko-kr/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/ko-kr/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/ko-kr/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/ko-kr/keynote"
     },
     "settings": {
-        "message": "설정"
+        "message": "설정",
+        "url": "https://www.icloud.com/ko-kr/setting"
     },
     "home": {
         "message": "홈"

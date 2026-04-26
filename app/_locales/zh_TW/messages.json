@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "郵件"
+        "message": "郵件",
+        "url": "https://www.icloud.com/zh-tw/mail"
     },
     "contacts": {
-        "message": "聯絡資訊"
+        "message": "聯絡人",
+        "url": "https://www.icloud.com/zh-tw/contacts"
     },
     "calendar": {
-        "message": "行事曆"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_zh_tw.png"
+        "message": "行事曆",
+        "url": "https://www.icloud.com/zh-tw/calendar"
     },
     "photos": {
-        "message": "照片"
+        "message": "照片",
+        "url": "https://www.icloud.com/zh-tw/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "雲碟",
+        "url": "https://www.icloud.com/zh-tw/iclouddrive"
     },
     "find": {
-        "message": "尋找"
+        "message": "尋找裝置",
+        "url": "https://www.icloud.com/zh-tw/find"
+    },
+    "invites": {
+        "message": "活動邀約",
+        "url": "https://www.icloud.com/zh-tw/invites"
     },
     "notes": {
-        "message": "備忘錄"
+        "message": "備忘錄",
+        "url": "https://www.icloud.com/zh-tw/notes"
     },
     "reminders": {
-        "message": "提醒事項"
+        "message": "提醒事項",
+        "url": "https://www.icloud.com/zh-tw/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/zh-tw/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/zh-tw/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/zh-tw/keynote"
     },
     "settings": {
-        "message": "設定"
+        "message": "設定",
+        "url": "https://www.icloud.com/zh-tw/setting"
     },
     "home": {
         "message": "首頁"

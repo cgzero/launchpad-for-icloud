@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "メール"
+        "message": "メール",
+        "url": "https://www.icloud.com/ja-jp/mail"
     },
     "contacts": {
-        "message": "連絡先"
+        "message": "連絡先",
+        "url": "https://www.icloud.com/ja-jp/contacts"
     },
     "calendar": {
-        "message": "カレンダー"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_ja.png"
+        "message": "カレンダー",
+        "url": "https://www.icloud.com/ja-jp/calendar"
     },
     "photos": {
-        "message": "写真"
+        "message": "写真",
+        "url": "https://www.icloud.com/ja-jp/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "Drive",
+        "url": "https://www.icloud.com/ja-jp/iclouddrive"
     },
     "find": {
-        "message": "探す"
+        "message": "探す",
+        "url": "https://www.icloud.com/ja-jp/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/ja-jp/invites"
     },
     "notes": {
-        "message": "メモ"
+        "message": "メモ",
+        "url": "https://www.icloud.com/ja-jp/notes"
     },
     "reminders": {
-        "message": "リマインダー"
+        "message": "リマインダー",
+        "url": "https://www.icloud.com/ja-jp/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/ja-jp/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/ja-jp/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/ja-jp/keynote"
     },
     "settings": {
-        "message": "設定"
+        "message": "設定",
+        "url": "https://www.icloud.com/ja-jp/setting"
     },
     "home": {
         "message": "ホーム"

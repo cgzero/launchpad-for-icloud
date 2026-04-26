@@ -3,7 +3,10 @@
  */
 
 // 图片地址
-const CALENDAR_ICON_URL = chrome.i18n.getMessage('calendarIconUrl');
+const CALENDAR_ICON_URL = 'src/img/calendar_icon.png';
+const CALENDAR_ICON_DARK_URL = 'src/img/calendar_icon_dark.png';
+const CALENDAR_BG_URL = 'src/img/appbg_icon.png';
+const CALENDAR_BG_DARK_URL = 'src/img/appbg_icon_dark.png';
 
 // 根据用户语言获取 iCloud 域名
 const ICLOUD_DOMAIN = (() => {
@@ -20,6 +23,7 @@ const APP_PATHS = new Map([
     ['iclouddrive', '/iclouddrive'],
     ['notes', '/notes'],
     ['reminders', '/reminders'],
+    ['invites', '/invites'],
     ['pages', '/pages'],
     ['numbers', '/numbers'],
     ['keynote', '/keynote'],
@@ -30,11 +34,46 @@ const APP_PATHS = new Map([
 // 需要国际化的文字节点
 const TEXT_NODES = [
     'mail', 'contacts', 'calendar', 'photos', 'iclouddrive',
-    'find', 'notes', 'reminders', 'pages', 'numbers',
+    'find', 'notes', 'reminders', 'invites', 'pages', 'numbers',
     'keynote', 'settings', 'home'
 ];
 
-// 数字位置映射（从雪碧图截取）
+// ==================== 日历绘制参数 ====================
+// 说明：
+//   - calendar_icon.png 是 2x 精度雪碧图，所以源坐标（sx/sy/sw/sh）写成 "逻辑像素 * 2"。
+//   - 目标坐标（dx/dy/dw/dh）基于 canvas 逻辑像素，canvas 实际分辨率为逻辑像素的 2 倍以实现高清。
+//   - 如需微调位置/间距，修改下方常量即可。
+
+// 画布逻辑尺寸（背景图会按此尺寸整图铺满）
+const CANVAS_SIZE = 74;
+// 高清缩放比
+const CANVAS_SCALE = 2;
+
+// 星期文字（从雪碧图切图）
+const DAY_SPRITE = {
+    sx: 230 * 2,   // 源图 x 偏移
+    sw: 340 * 2,   // 源图裁剪宽
+    sh: 30 * 2,    // 源图裁剪高
+    dx: 10,        // 目标 x
+    dy: 11,        // 目标 y
+    dw: 160,       // 目标宽
+    dh: 15         // 目标高
+};
+
+// 日期数字（从雪碧图切图）
+const NUM_SPRITE = {
+    sy: 0,         // 源图 y 偏移
+    sw: 52 * 2,    // 源图裁剪宽（单个数字）
+    sh: 80 * 2,    // 源图裁剪高
+    dy: 25,        // 目标 y
+    dw: 26,        // 目标宽
+    dh: 40,        // 目标高
+    singleDx: 25,          // 单位数时居中 x
+    doubleStartDx: 12,     // 两位数时第一位的 x
+    doubleStepDx: 25       // 两位数时每位间距
+};
+
+// 数字位置映射（雪碧图中每个数字的源 x，2x 精度）
 const DIGIT_OFFSETS = {
     0: 495 * 2,
     1: 11 * 2,
@@ -48,7 +87,7 @@ const DIGIT_OFFSETS = {
     9: 440 * 2
 };
 
-// 星期位置映射
+// 星期位置映射（雪碧图中每个星期条目的源 y，2x 精度）
 const DAY_OFFSETS = {
     0: 120 * 2,  // Sunday
     1: 150 * 2,  // Monday
@@ -66,22 +105,32 @@ class CalendarDrawer {
     #canvas;
     #ctx;
 
-    constructor(canvasId, imageSrc) {
+    constructor(canvasId) {
         this.#canvas = document.getElementById(canvasId);
         this.#ctx = this.#canvas?.getContext('2d');
-        this.imageSrc = imageSrc;
     }
 
     async init() {
         if (!this.#canvas || !this.#ctx) return;
 
-        this.#canvas.width = 74 * 2;
-        this.#canvas.height = 74 * 2;
-        this.#ctx.scale(2, 2);
+        this.#canvas.width = CANVAS_SIZE * CANVAS_SCALE;
+        this.#canvas.height = CANVAS_SIZE * CANVAS_SCALE;
+        this.#ctx.scale(CANVAS_SCALE, CANVAS_SCALE);
 
-        const img = await this.#loadImage(this.imageSrc);
+        await this.render();
+    }
+
+    async render() {
+        if (!this.#canvas || !this.#ctx) return;
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const [bgImg, fgImg] = await Promise.all([
+            this.#loadImage(isDark ? CALENDAR_BG_DARK_URL : CALENDAR_BG_URL),
+            this.#loadImage(isDark ? CALENDAR_ICON_DARK_URL : CALENDAR_ICON_URL)
+        ]);
+
+        this.#ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
         this.#ctx.beginPath();
-        this.#drawCalendar(img);
+        this.#drawCalendar(bgImg, fgImg);
     }
 
     #loadImage(src) {
@@ -94,35 +143,38 @@ class CalendarDrawer {
     }
 
     #drawDay(img, sy) {
-        this.#ctx.drawImage(img, 230 * 2, sy, 340 * 2, 30 * 2, 10, 10, 160, 15);
+        const s = DAY_SPRITE;
+        this.#ctx.drawImage(img, s.sx, sy, s.sw, s.sh, s.dx, s.dy, s.dw, s.dh);
     }
 
     #drawNum(img, sx, dx) {
-        this.#ctx.drawImage(img, sx, 0, 52 * 2, 80 * 2, dx, 25, 26, 40);
+        const n = NUM_SPRITE;
+        this.#ctx.drawImage(img, sx, n.sy, n.sw, n.sh, dx, n.dy, n.dw, n.dh);
     }
 
     #drawDate(img, date) {
         const digits = date < 10 ? [date] : [Math.floor(date / 10), date % 10];
+        const n = NUM_SPRITE;
 
         digits.forEach((digit, i) => {
-            const x = date < 10 ? 25 : 12 + i * 25;
+            const x = date < 10 ? n.singleDx : n.doubleStartDx + i * n.doubleStepDx;
             this.#drawNum(img, DIGIT_OFFSETS[digit], x);
         });
     }
 
-    #drawCalendar(img) {
-        // 绘制日历背景
-        this.#ctx.drawImage(img, 0, 100 * 2, 142 * 2, 142 * 2, 0, 0, 74, 74);
+    #drawCalendar(bgImg, fgImg) {
+        // 绘制日历背景（完整背景图，适配主题）
+        this.#ctx.drawImage(bgImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
         const now = new Date();
         const day = now.getDay();
         const date = now.getDate();
 
-        // 绘制星期
-        this.#drawDay(img, DAY_OFFSETS[day]);
+        // 绘制星期（前景：从 calendar_icon.png 切图）
+        this.#drawDay(fgImg, DAY_OFFSETS[day]);
 
-        // 绘制日期数字
-        this.#drawDate(img, date);
+        // 绘制日期数字（前景：从 calendar_icon.png 切图）
+        this.#drawDate(fgImg, date);
     }
 }
 
@@ -136,6 +188,25 @@ const setTextNodes = () => {
             element.textContent = chrome.i18n.getMessage(node);
         }
     }
+};
+
+/**
+ * 根据系统主题切换图标
+ */
+const setDarkModeIcons = () => {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.querySelectorAll('.app-btn img').forEach(img => {
+        const src = img.src;
+        if (isDark) {
+            if (!src.includes('_dark')) {
+                img.src = src.replace('.png', '_dark.png');
+            }
+        } else {
+            if (src.includes('_dark')) {
+                img.src = src.replace('_dark.png', '.png');
+            }
+        }
+    });
 };
 
 /**
@@ -155,10 +226,17 @@ const setAppLinks = () => {
 const init = () => {
     setAppLinks();
 
-    const calendar = new CalendarDrawer('canvas', CALENDAR_ICON_URL);
+    const calendar = new CalendarDrawer('canvas');
     calendar.init();
 
     setTextNodes();
+    setDarkModeIcons();
+
+    // 监听主题变化
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        setDarkModeIcons();
+        calendar.render();
+    });
 };
 
 // DOM 加载完成后初始化

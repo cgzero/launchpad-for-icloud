@@ -1,0 +1,66 @@
+---
+description: App 各国链接格式
+globs:
+  - src/**/*.{js,html}
+---
+
+# app-url
+
+## iCloud 各应用网址（默认英文版）
+
+- <https://www.icloud.com/mail>
+- <https://www.icloud.com/contacts>
+- <https://www.icloud.com/calendar>
+- <https://www.icloud.com/photos>
+- <https://www.icloud.com/iclouddrive>
+- <https://www.icloud.com/notes>
+- <https://www.icloud.com/reminders>
+- <https://www.icloud.com/invites>
+- <https://www.icloud.com/pages>
+- <https://www.icloud.com/numbers>
+- <https://www.icloud.com/keynote>
+- <https://www.icloud.com/find>
+- <https://www.icloud.com/setting>
+
+## iCloud 多语言网址格式规范
+
+默认英文版本 mail 为例：
+
+- 英文 en <https://www.icloud.com/mail>
+
+其他语言版本规则为：
+
+- 阿拉伯语 ar <https://www.icloud.com/ar-sa/mail>
+- 西班牙语 es<https://www.icloud.com/ca-es/mail>
+- 捷克语 cs <https://www.icloud.com/cs-cz/mail>
+- 丹麦语 da <https://www.icloud.com/da-dk/mail>
+- 德语 de <https://www.icloud.com/de-de/mail>
+- 希腊语 el <https://www.icloud.com/el-gr/mail>
+- 西班牙语 es <https://www.icloud.com/es-es/mail>
+- 芬兰语 fi <https://www.icloud.com/fi-fi/mail>
+- 法语 fr <https://www.icloud.com/fr-fr/mail>
+- 印地语 hi <https://www.icloud.com/hi-in/mail>
+- 克罗地亚语 hr <https://www.icloud.com/hr-hr/mail>
+- 匈牙利语 hu <https://www.icloud.com/hu-hu/mail>
+- 印度尼西亚语 id <https://www.icloud.com/id-id/mail>
+- 意大利语 it <https://www.icloud.com/it-it/mail>
+- 希伯来语 he <https://www.icloud.com/iw-il/mail>
+- 日语 ja <https://www.icloud.com/ja-jp/mail>
+- 韩语 ko <https://www.icloud.com/ko-kr/mail>
+- 马来语 ms <https://www.icloud.com/ms-my/mail>
+- 荷兰语 nl <https://www.icloud.com/nl-nl/mail>
+- 挪威语 no <https://www.icloud.com/no-no/mail>
+- 波兰语 pl <https://www.icloud.com/pl-pl/mail>
+- 葡萄牙语（巴西） pt_BR <https://www.icloud.com/pt-br/mail>
+- 葡萄牙语（葡萄牙） pt_PT <https://www.icloud.com/pt-pt/mail>
+- 罗马尼亚语 ro <https://www.icloud.com/ro-ro/mail>
+- 俄语 ru <https://www.icloud.com/ru-ru/mail>
+- 斯洛伐克语 sk <https://www.icloud.com/sk-sk/mail>
+- 斯洛文尼亚语 sl <https://www.icloud.com/sl-si/mail>
+- 瑞典语 sv <https://www.icloud.com/sv-se/mail>
+- 泰语 th <https://www.icloud.com/th-th/mail>
+- 土耳其语 tr <https://www.icloud.com/tr-tr/mail>
+- 乌克兰语 uk <https://www.icloud.com/uk-ua/mail>
+- 越南语 vi <https://www.icloud.com/vi-vi/mail>
+- 中文（中国） zh_CN <https://www.icloud.com.cn/mail>
+- 中文（台湾） zh_TW <https://www.icloud.com/zh-tw/mail>

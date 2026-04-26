@@ -30,7 +30,7 @@ body {
         --text-color: #fafafa;
         --border-color: #6a6a6a;
         --btn-border-color: rgba(255, 255, 255, 0.15);
-        --app-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+        --app-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -99,17 +99,6 @@ a, a:hover {
     height:var(--app-size);
     width: var(--app-size);
     position: relative;
-}
-
-.btn-border {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 10;
-    border-radius: 22%;
-    border: 1px solid var(--btn-border-color);
 }
 
 .btn-text-container {

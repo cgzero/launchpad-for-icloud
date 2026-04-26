@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "Mail"
+        "message": "Mail",
+        "url": "https://www.icloud.com/mail"
     },
     "contacts": {
-        "message": "Contacts"
+        "message": "Contacts",
+        "url": "https://www.icloud.com/contacts"
     },
     "calendar": {
-        "message": "Calendar"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_en.png"
+        "message": "Calendar",
+        "url": "https://www.icloud.com/calendar"
     },
     "photos": {
-        "message": "Photos"
+        "message": "Photos",
+        "url": "https://www.icloud.com/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "Drive",
+        "url": "https://www.icloud.com/iclouddrive"
     },
     "find": {
-        "message": "Find My"
+        "message": "Find My",
+        "url": "https://www.icloud.com/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/invites"
     },
     "notes": {
-        "message": "Notes"
+        "message": "Notes",
+        "url": "https://www.icloud.com/notes"
     },
     "reminders": {
-        "message": "Reminders"
+        "message": "Reminders",
+        "url": "https://www.icloud.com/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/keynote"
     },
     "settings": {
-        "message": "Settings"
+        "message": "Settings",
+        "url": "https://www.icloud.com/setting"
     },
     "home": {
         "message": "Home"

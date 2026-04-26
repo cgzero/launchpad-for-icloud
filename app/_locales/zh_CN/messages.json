@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "邮件"
+        "message": "邮件",
+        "url": "https://www.icloud.com.cn/mail"
     },
     "contacts": {
-        "message": "通讯录"
+        "message": "通讯录",
+        "url": "https://www.icloud.com.cn/contacts"
     },
     "calendar": {
-        "message": "日历"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_zh_cn.png"
+        "message": "日历",
+        "url": "https://www.icloud.com.cn/calendar"
     },
     "photos": {
-        "message": "照片"
+        "message": "照片",
+        "url": "https://www.icloud.com.cn/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "云盘",
+        "url": "https://www.icloud.com.cn/iclouddrive"
     },
     "find": {
-        "message": "查找"
+        "message": "查找",
+        "url": "https://www.icloud.com.cn/find"
+    },
+    "invites": {
+        "message": "活动邀请",
+        "url": "https://www.icloud.com.cn/invites"
     },
     "notes": {
-        "message": "备忘录"
+        "message": "备忘录",
+        "url": "https://www.icloud.com.cn/notes"
     },
     "reminders": {
-        "message": "提醒事项"
+        "message": "提醒事项",
+        "url": "https://www.icloud.com.cn/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com.cn/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com.cn/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com.cn/keynote"
     },
     "settings": {
-        "message": "设置"
+        "message": "设置",
+        "url": "https://www.icloud.com.cn/setting"
     },
     "home": {
         "message": "首页"

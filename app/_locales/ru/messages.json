@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "Mail"
+        "message": "Почта",
+        "url": "https://www.icloud.com/ru-ru/mail"
     },
     "contacts": {
-        "message": "Контакты"
+        "message": "Контакты",
+        "url": "https://www.icloud.com/ru-ru/contacts"
     },
     "calendar": {
-        "message": "Календарь"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_ru.png"
+        "message": "Календарь",
+        "url": "https://www.icloud.com/ru-ru/calendar"
     },
     "photos": {
-        "message": "Фото"
+        "message": "Фото",
+        "url": "https://www.icloud.com/ru-ru/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "Drive",
+        "url": "https://www.icloud.com/ru-ru/iclouddrive"
     },
     "find": {
-        "message": "Найти"
+        "message": "Найти",
+        "url": "https://www.icloud.com/ru-ru/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/ru-ru/invites"
     },
     "notes": {
-        "message": "Заметки"
+        "message": "Заметки",
+        "url": "https://www.icloud.com/ru-ru/notes"
     },
     "reminders": {
-        "message": "Напоминания"
+        "message": "Напоминания",
+        "url": "https://www.icloud.com/ru-ru/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/ru-ru/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/ru-ru/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/ru-ru/keynote"
     },
     "settings": {
-        "message": "Настройки"
+        "message": "Настройки",
+        "url": "https://www.icloud.com/ru-ru/setting"
     },
     "home": {
         "message": "Домой"

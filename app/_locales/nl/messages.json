@@ -1,42 +1,55 @@
 {
     "mail": {
-        "message": "Mail"
+        "message": "Mail",
+        "url": "https://www.icloud.com/nl-nl/mail"
     },
     "contacts": {
-        "message": "Contacten"
+        "message": "Contacten",
+        "url": "https://www.icloud.com/nl-nl/contacts"
     },
     "calendar": {
-        "message": "Agenda"
-    },
-    "calendarIconUrl": {
-        "message": "src/img/calendar_icon_nl.png"
+        "message": "Agenda",
+        "url": "https://www.icloud.com/nl-nl/calendar"
     },
     "photos": {
-        "message": "Foto's"
+        "message": "Foto's",
+        "url": "https://www.icloud.com/nl-nl/photos"
     },
     "iclouddrive": {
-        "message": "iCloud Drive"
+        "message": "Drive",
+        "url": "https://www.icloud.com/nl-nl/iclouddrive"
     },
     "find": {
-        "message": "Zoek"
+        "message": "Zoek",
+        "url": "https://www.icloud.com/nl-nl/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/nl-nl/invites"
     },
     "notes": {
-        "message": "Notities"
+        "message": "Notities",
+        "url": "https://www.icloud.com/nl-nl/notes"
     },
     "reminders": {
-        "message": "Herinneringen"
+        "message": "Herinneringen",
+        "url": "https://www.icloud.com/nl-nl/reminders"
     },
     "pages": {
-        "message": "Pages"
+        "message": "Pages",
+        "url": "https://www.icloud.com/nl-nl/pages"
     },
     "numbers": {
-        "message": "Numbers"
+        "message": "Numbers",
+        "url": "https://www.icloud.com/nl-nl/numbers"
     },
     "keynote": {
-        "message": "Keynote"
+        "message": "Keynote",
+        "url": "https://www.icloud.com/nl-nl/keynote"
     },
     "settings": {
-        "message": "Instellingen"
+        "message": "Instellingen",
+        "url": "https://www.icloud.com/nl-nl/setting"
     },
     "home": {
         "message": "Thuis"
