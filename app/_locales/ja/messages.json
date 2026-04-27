@@ -46,12 +46,5 @@
     "keynote": {
         "message": "Keynote",
         "url": "https://www.icloud.com/ja-jp/keynote"
-    },
-    "settings": {
-        "message": "設定",
-        "url": "https://www.icloud.com/ja-jp/setting"
-    },
-    "home": {
-        "message": "ホーム"
     }
 }

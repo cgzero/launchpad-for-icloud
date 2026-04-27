@@ -1,0 +1,50 @@
+{
+    "mail": {
+        "message": "เมล",
+        "url": "https://www.icloud.com/th-th/mail"
+    },
+    "contacts": {
+        "message": "รายชื่อ",
+        "url": "https://www.icloud.com/th-th/contacts"
+    },
+    "calendar": {
+        "message": "ปฏิทิน",
+        "url": "https://www.icloud.com/th-th/calendar"
+    },
+    "photos": {
+        "message": "รูปภาพ",
+        "url": "https://www.icloud.com/th-th/photos"
+    },
+    "iclouddrive": {
+        "message": "Drive",
+        "url": "https://www.icloud.com/th-th/iclouddrive"
+    },
+    "find": {
+        "message": "ค้นหา",
+        "url": "https://www.icloud.com/th-th/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/th-th/invites"
+    },
+    "notes": {
+        "message": "โน้ต",
+        "url": "https://www.icloud.com/th-th/notes"
+    },
+    "reminders": {
+        "message": "เตือนความจำ",
+        "url": "https://www.icloud.com/th-th/reminders"
+    },
+    "pages": {
+        "message": "Pages",
+        "url": "https://www.icloud.com/th-th/pages"
+    },
+    "numbers": {
+        "message": "Numbers",
+        "url": "https://www.icloud.com/th-th/numbers"
+    },
+    "keynote": {
+        "message": "Keynote",
+        "url": "https://www.icloud.com/th-th/keynote"
+    }
+}

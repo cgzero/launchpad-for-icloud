@@ -1,0 +1,50 @@
+{
+    "mail": {
+        "message": "Poczta",
+        "url": "https://www.icloud.com/pl-pl/mail"
+    },
+    "contacts": {
+        "message": "Kontakty",
+        "url": "https://www.icloud.com/pl-pl/contacts"
+    },
+    "calendar": {
+        "message": "Kalendarz",
+        "url": "https://www.icloud.com/pl-pl/calendar"
+    },
+    "photos": {
+        "message": "Zdjęcia",
+        "url": "https://www.icloud.com/pl-pl/photos"
+    },
+    "iclouddrive": {
+        "message": "Drive",
+        "url": "https://www.icloud.com/pl-pl/iclouddrive"
+    },
+    "find": {
+        "message": "Znajdź",
+        "url": "https://www.icloud.com/pl-pl/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/pl-pl/invites"
+    },
+    "notes": {
+        "message": "Notatki",
+        "url": "https://www.icloud.com/pl-pl/notes"
+    },
+    "reminders": {
+        "message": "Przypomnienia",
+        "url": "https://www.icloud.com/pl-pl/reminders"
+    },
+    "pages": {
+        "message": "Pages",
+        "url": "https://www.icloud.com/pl-pl/pages"
+    },
+    "numbers": {
+        "message": "Numbers",
+        "url": "https://www.icloud.com/pl-pl/numbers"
+    },
+    "keynote": {
+        "message": "Keynote",
+        "url": "https://www.icloud.com/pl-pl/keynote"
+    }
+}

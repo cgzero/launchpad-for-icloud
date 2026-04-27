@@ -70,6 +70,8 @@ a, a:hover {
 .app-btn {
     outline: none;
     display: flex;
+    /* 避免应用名称太长影响布局 */
+    max-width: 80px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

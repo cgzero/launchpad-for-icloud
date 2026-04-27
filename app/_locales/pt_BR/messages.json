@@ -1,0 +1,50 @@
+{
+    "mail": {
+        "message": "Mail",
+        "url": "https://www.icloud.com/pt-br/mail"
+    },
+    "contacts": {
+        "message": "Contatos",
+        "url": "https://www.icloud.com/pt-br/contacts"
+    },
+    "calendar": {
+        "message": "Calendário",
+        "url": "https://www.icloud.com/pt-br/calendar"
+    },
+    "photos": {
+        "message": "Fotos",
+        "url": "https://www.icloud.com/pt-br/photos"
+    },
+    "iclouddrive": {
+        "message": "Drive",
+        "url": "https://www.icloud.com/pt-br/iclouddrive"
+    },
+    "find": {
+        "message": "Buscar",
+        "url": "https://www.icloud.com/pt-br/find"
+    },
+    "invites": {
+        "message": "Convites",
+        "url": "https://www.icloud.com/pt-br/invites"
+    },
+    "notes": {
+        "message": "Notas",
+        "url": "https://www.icloud.com/pt-br/notes"
+    },
+    "reminders": {
+        "message": "Lembretes",
+        "url": "https://www.icloud.com/pt-br/reminders"
+    },
+    "pages": {
+        "message": "Pages",
+        "url": "https://www.icloud.com/pt-br/pages"
+    },
+    "numbers": {
+        "message": "Numbers",
+        "url": "https://www.icloud.com/pt-br/numbers"
+    },
+    "keynote": {
+        "message": "Keynote",
+        "url": "https://www.icloud.com/pt-br/keynote"
+    }
+}

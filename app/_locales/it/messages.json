@@ -46,12 +46,5 @@
     "keynote": {
         "message": "Keynote",
         "url": "https://www.icloud.com/it-it/keynote"
-    },
-    "settings": {
-        "message": "Impostazioni",
-        "url": "https://www.icloud.com/it-it/setting"
-    },
-    "home": {
-        "message": "Home"
     }
 }

@@ -1,0 +1,50 @@
+{
+    "mail": {
+        "message": "मेल",
+        "url": "https://www.icloud.com/hi-in/mail"
+    },
+    "contacts": {
+        "message": "संपर्क",
+        "url": "https://www.icloud.com/hi-in/contacts"
+    },
+    "calendar": {
+        "message": "कैलेंडर",
+        "url": "https://www.icloud.com/hi-in/calendar"
+    },
+    "photos": {
+        "message": "तस्वीर",
+        "url": "https://www.icloud.com/hi-in/photos"
+    },
+    "iclouddrive": {
+        "message": "Drive",
+        "url": "https://www.icloud.com/hi-in/iclouddrive"
+    },
+    "find": {
+        "message": "ढूँढें",
+        "url": "https://www.icloud.com/hi-in/find"
+    },
+    "invites": {
+        "message": "आमंत्रण",
+        "url": "https://www.icloud.com/hi-in/invites"
+    },
+    "notes": {
+        "message": "नोट्स",
+        "url": "https://www.icloud.com/hi-in/notes"
+    },
+    "reminders": {
+        "message": "रिमाइंडर",
+        "url": "https://www.icloud.com/hi-in/reminders"
+    },
+    "pages": {
+        "message": "Pages",
+        "url": "https://www.icloud.com/hi-in/pages"
+    },
+    "numbers": {
+        "message": "Numbers",
+        "url": "https://www.icloud.com/hi-in/numbers"
+    },
+    "keynote": {
+        "message": "Keynote",
+        "url": "https://www.icloud.com/hi-in/keynote"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "mail": {
+        "message": "Mail",
+        "url": "https://www.icloud.com/tr-tr/mail"
+    },
+    "contacts": {
+        "message": "Kişiler",
+        "url": "https://www.icloud.com/tr-tr/contacts"
+    },
+    "calendar": {
+        "message": "Takvim",
+        "url": "https://www.icloud.com/tr-tr/calendar"
+    },
+    "photos": {
+        "message": "Fotoğraflar",
+        "url": "https://www.icloud.com/tr-tr/photos"
+    },
+    "iclouddrive": {
+        "message": "Drive",
+        "url": "https://www.icloud.com/tr-tr/iclouddrive"
+    },
+    "find": {
+        "message": "Bul",
+        "url": "https://www.icloud.com/tr-tr/find"
+    },
+    "invites": {
+        "message": "Invites",
+        "url": "https://www.icloud.com/tr-tr/invites"
+    },
+    "notes": {
+        "message": "Notlar",
+        "url": "https://www.icloud.com/tr-tr/notes"
+    },
+    "reminders": {
+        "message": "Anımsatıcılar",
+        "url": "https://www.icloud.com/tr-tr/reminders"
+    },
+    "pages": {
+        "message": "Pages",
+        "url": "https://www.icloud.com/tr-tr/pages"
+    },
+    "numbers": {
+        "message": "Numbers",
+        "url": "https://www.icloud.com/tr-tr/numbers"
+    },
+    "keynote": {
+        "message": "Keynote",
+        "url": "https://www.icloud.com/tr-tr/keynote"
+    }
+}

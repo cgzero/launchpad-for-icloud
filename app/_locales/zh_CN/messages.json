@@ -46,12 +46,5 @@
     "keynote": {
         "message": "Keynote",
         "url": "https://www.icloud.com.cn/keynote"
-    },
-    "settings": {
-        "message": "设置",
-        "url": "https://www.icloud.com.cn/setting"
-    },
-    "home": {
-        "message": "首页"
     }
 }
