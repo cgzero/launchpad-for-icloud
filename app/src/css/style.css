@@ -54,7 +54,7 @@ a, a:hover {
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
     width: 540px;
-    padding: 24px 24px 8px 24px;
+    padding: 20px 24px 4px 24px;
     margin: 5px;
     border: 1px solid var(--border-color);
     border-radius: 16px;
@@ -68,7 +68,8 @@ a, a:hover {
 }
 
 .app-btn {
-    outline: none;
+    padding-top: 4px;
+    border-radius: 16px;
     display: flex;
     /* 避免应用名称太长影响布局 */
     max-width: 80px;
