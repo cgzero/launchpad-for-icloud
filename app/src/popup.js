@@ -14,6 +14,9 @@ const ICLOUD_DOMAIN = (() => {
     return lang === 'zh-CN' ? 'icloud.com.cn' : 'icloud.com';
 })();
 
+// mock 的日期
+const MOCK_TEST_TIME = ''; // '2026-05-01'
+
 // 应用路径映射（新版 iCloud URL 格式）
 const APP_PATHS = new Map([
     ['mail', '/mail'],
@@ -54,7 +57,7 @@ const DAY_SPRITE = {
     sx: 230 * 2,   // 源图 x 偏移
     sw: 340 * 2,   // 源图裁剪宽
     sh: 30 * 2,    // 源图裁剪高
-    dx: 10,        // 目标 x
+    dx: 12,        // 目标 x
     dy: 11,        // 目标 y
     dw: 160,       // 目标宽
     dh: 15         // 目标高
@@ -166,7 +169,7 @@ class CalendarDrawer {
         // 绘制日历背景（完整背景图，适配主题）
         this.#ctx.drawImage(bgImg, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
-        const now = new Date();
+        const now = MOCK_TEST_TIME ? new Date(MOCK_TEST_TIME) : new Date();
         const day = now.getDay();
         const date = now.getDate();
 
